@@ -13,6 +13,6 @@ def view_map(request):
 def borders_data(request):
     border_list = []
     for shape in BordersMI.objects.all():
-	border_list.append(shape.geom.json)
+	border_list.append(json.loads(shape.geom.json))
     return HttpResponse(json.dumps(border_list), mimetype="application/json")
 

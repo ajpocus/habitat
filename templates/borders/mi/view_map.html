@@ -5,16 +5,15 @@
     <title>MI Borders</title>
     <link rel="stylesheet" type="text/css"
 	href="{{ STATIC_URL }}css/view_map.css" />
-    <script type="text/javascript"
-	src="http://maps.google.com/maps/api/js?sensor=false">
-    </script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/OpenLayers.js">
+	</script>
     <script type="text/javascript"
 	src="{{ STATIC_URL }}js/jquery-1.6.2.js">
     </script>
     <script type="text/javascript" src="{{ STATIC_URL }}js/map.js"></script>
 </head>
 
-<body onload="init()">
-    <div id="map_canvas" style="width: 100%; height: 100%;"></div>
+<body>
+    <div id="map"></div>
 </body>
 </html>

@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.gis',
     'south',
     'borders',
+    'streets',
 )
 
 # A sample logging configuration. The only tangible logging
